@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Circle progressbar</title>
+	<link rel="stylesheet" href="progresscircle.css"/>
+  </head>
+  <body>
+  
+    
+	<div class="wrapper">
+	  <h2>Our Skill</h2>
+	  
+	<div class="skills-area">
+	
+	    <div class="single-skill"> 
+		  <div class="circlechart" data-percentage="-20"> HTML </div>
+		</div>
+		
+		<div class="single-skill"> 
+		  <div class="circlechart" data-percentage="-20"> CSS </div>
+		</div>
+		
+		<div class="single-skill"> 
+		  <div class="circlechart" data-percentage="-20"> JQUERY </div>
+		</div>
+		
+	</div>
+	</div>
+	
+	
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous">
+    </script>
+	
+    <script src="progresscircle.js"></script>
+	
+	<script>
+	  $(function(){
+
+        $('.circlechart').circlechart();
+
+      });
+	</script>
+		
+  </body>
+<html>

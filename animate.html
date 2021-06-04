@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>animate</title>
+	<style>
+	  
+	p.one {
+    width: 250px;
+    background: #ff5200;
+    text-align: center;
+    padding: 8px;
+    }
+
+    p.one a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    }
+	
+	p.one:hover{
+	background:#ffb400;
+	}
+	  
+	</style>
+  </head>
+  <body>
+  
+  
+    <p class="one"><a href="#">Daffodil International University</a></p>
+    <p class="one"><a href="#">Daffodil International University</a></p>
+    <p class="one"><a href="#">Daffodil International University</a></p>
+    <p class="one"><a href="#">Daffodil International University</a></p>
+    <p class="one"><a href="#">Daffodil International University</a></p>
+    <p class="one"><a href="#">Daffodil International University</a></p>
+	
+	
+    <script
+	src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	crossorigin="anonymous"></script>
+	
+	<script>
+	
+	$(document).ready(function(){
+	$(".one").mouseover(function(){
+	$(this).stop().animate({width:"300px"});
+	});
+	});
+	
+	
+	$(document).ready(function(){
+	$(".one").mouseout(function(){
+	$(this).stop().animate({width:"250px"});
+	});
+	});
+	
+	</script>
+		
+  </body>
+<html>

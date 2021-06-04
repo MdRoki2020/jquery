@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>slideup and stop</title>
+	<style>
+	  .rectangle {
+      background: red;
+      width: 200px;
+      height: 200px;
+      }
+	  input#slideup {
+      padding: 5px 20px;
+      background: #ffb400;
+      margin-bottom: 20px;
+      }
+	  #stop{
+	  padding: 5px 20px;
+      background: #ffb400;
+      margin-top: 20px;
+	  }
+	  #fadeinOut{
+	  padding: 5px 20px;
+      background: #ffb400;
+      margin-top: 20px;
+	  }
+	  
+	</style>
+  </head>
+  <body>
+  
+  
+    <input id="slideup" type="button" value="slideup"/>
+	<input id="stop" type="button" value="stop"/>
+	<input id="fadeinOut" type="button" value="Fadein and out"/>
+    <div id="rectangle" class="rectangle">
+	
+	</div>
+	
+	
+    <script
+	src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	crossorigin="anonymous"></script>
+	
+	<script>
+	//slideup function
+	$(document).ready(function(){
+	$("#slideup").click(function(){
+	$("#rectangle").slideUp(2000);
+	});
+	});
+	
+	//stop function
+	$(document).ready(function(){
+	$("#stop").click(function(){
+	$("#rectangle").stop(2000);
+	});
+	});
+	
+	//fadein and out function
+	$(document).ready(function(){
+	$("#fadeinOut").click(function(){
+	$("#rectangle").slideToggle(2000);
+	});
+	});
+	
+	</script>
+		
+  </body>
+<html>

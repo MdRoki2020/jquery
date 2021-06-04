@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>remove and show</title>
+	<style>
+	  .rectangle {
+      background: red;
+      width: 200px;
+      height: 200px;
+	  display:none;
+      }
+	  input#hide {
+      padding: 5px 20px;
+      background: #ffb400;
+      margin-top: 20px;
+      }
+	  #show{
+	  padding: 5px 20px;
+      background: #ffb400;
+      margin-top: 20px;
+	  }
+	  #showHide{
+	  padding: 5px 20px;
+      background: #ffb400;
+      margin-top: 20px;
+	  }
+	  
+	</style>
+  </head>
+  <body>
+  
+    <div id="rectangle" class="rectangle">
+	
+	</div>
+	<input id="hide" type="button" value="Hide"/>
+	<input id="show" type="button" value="Show"/>
+	<input id="showHide" type="button" value="Show and Hide"/>
+	
+	
+    <script
+	src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	crossorigin="anonymous"></script>
+	
+	<script>
+	//hide function
+	$(document).ready(function(){
+	$("#hide").click(function(){
+	$("#rectangle").hide(2000);
+	});
+	});
+	
+	//show function
+	$(document).ready(function(){
+	$("#show").click(function(){
+	$("#rectangle").show(2000);
+	});
+	});
+	
+	//show and hide function
+	$(document).ready(function(){
+	$("#showHide").click(function(){
+	$("#rectangle").toggle(2000);
+	});
+	});
+	
+	</script>
+		
+  </body>
+<html>

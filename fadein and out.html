@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>fadeIn And Out</title>
+	<style>
+	  .rectangle {
+      background: red;
+      width: 200px;
+      height: 200px;
+	  display:none;
+      }
+	  input#fadein {
+      padding: 5px 20px;
+      background: #ffb400;
+      margin-top: 20px;
+      }
+	  #fadeout{
+	  padding: 5px 20px;
+      background: #ffb400;
+      margin-top: 20px;
+	  }
+	  #fadeinOut{
+	  padding: 5px 20px;
+      background: #ffb400;
+      margin-top: 20px;
+	  }
+	  
+	</style>
+  </head>
+  <body>
+  
+    <div id="rectangle" class="rectangle">
+	
+	</div>
+	<input id="fadein" type="button" value="fadein"/>
+	<input id="fadeout" type="button" value="fadeout"/>
+	<input id="fadeinOut" type="button" value="Fadein and out"/>
+	
+	
+    <script
+	src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	crossorigin="anonymous"></script>
+	
+	<script>
+	//fadein function
+	$(document).ready(function(){
+	$("#fadein").click(function(){
+	$("#rectangle").fadeIn(2000);
+	});
+	});
+	
+	//fadeout function
+	$(document).ready(function(){
+	$("#fadeout").click(function(){
+	$("#rectangle").fadeOut(2000);
+	});
+	});
+	
+	//fadein and out function
+	$(document).ready(function(){
+	$("#fadeinOut").click(function(){
+	$("#rectangle").toggle(2000);
+	});
+	});
+	
+	</script>
+		
+  </body>
+<html>
